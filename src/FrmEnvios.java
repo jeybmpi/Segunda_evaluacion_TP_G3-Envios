@@ -6,7 +6,7 @@ import servicios.EnviosServicio;
 
 public class FrmEnvios extends JFrame {
     private JTable tblEnvio;
-    private JPanel pnlEditarEnvio, pnlEditarCancelado, pnlEnvios, pnlEnviosCancelados;
+    private JPanel pnlEditarEnvio, pnlEditarCancelado;
     private JTextField txtNumero, txtCliente, txtPeso, txtDistanciaKm, txtCodigoRetirar;
     private JComboBox cmbTipoDeEnvio;    
     JTabbedPane tp;
@@ -21,7 +21,6 @@ public class FrmEnvios extends JFrame {
         //_______barra de los botones______________________________________________________
 
         JButton btnAgregarEnvio = new JButton();
-        //btnAgregarEnvio.setBounds(5, 2, 40, 40);
         btnAgregarEnvio.setIcon(new ImageIcon(getClass().getResource("/iconos/agregar.png")));
         btnAgregarEnvio.setToolTipText("Agregar Envio");
         btnAgregarEnvio.addActionListener(evt -> { 
@@ -31,7 +30,6 @@ public class FrmEnvios extends JFrame {
         tbEnvios.add(btnAgregarEnvio);
 
         JButton btnQuitarEnvio = new JButton();
-        //btnQuitarEnvio.setBounds(5, 2, 40, 40);
         btnQuitarEnvio.setIcon(new ImageIcon(getClass().getResource("/iconos/quitar.png")));
         btnQuitarEnvio.setToolTipText("Quitar Envio");
         btnQuitarEnvio.addActionListener(evt -> { 
