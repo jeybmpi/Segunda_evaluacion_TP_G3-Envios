@@ -5,7 +5,7 @@ public abstract class Envio {
     private int codigoDeEnvio;
     private double pesoDelEnvio;
     private double distanciaDelEnvio;
-    private TipoEnvio tipo; // Atributo agregado
+    private TipoEnvio tipo; // Atributo agregado: Este es el que faltaba, como se me olvido, mejor dejo la notacion 
 
     public Envio(String cliente, int codigoDeEnvio, double pesoDelEnvio, double distanciaDelEnvio, TipoEnvio tipo){
         this.cliente = cliente;
