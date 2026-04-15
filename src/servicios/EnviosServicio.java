@@ -9,12 +9,11 @@ import modelos.Envio;
 public class EnviosServicio {
 
     private static List<Envio> envios = new ArrayList<>();
-    public static String[] encabezados = new String[] { "Codigo", "Cliente", "Peso", "Distancia", "Costo" };
-
+    public static String[] encabezados = new String[] { "Codigo", "Cliente", "Tipo", "Peso", "Distancia", "Costo" };
 
     public static boolean existeCodigo(int codigo) {
-        for (Envio envios : envios) {
-            if (envios.getCodigoEnvio() == codigo) {
+        for (Envio e : envios) {
+            if (e.getCodigoEnvio() == codigo) {
                 return true;
             }
         }
@@ -41,7 +40,6 @@ public class EnviosServicio {
         for (int fila = 0; fila < envios.size(); fila++) {
             datos[fila] = envios.get(fila).getDatosParaTabla();
         }
-        
         DefaultTableModel dtm = new DefaultTableModel(datos, encabezados);
         tbl.setModel(dtm);
     }

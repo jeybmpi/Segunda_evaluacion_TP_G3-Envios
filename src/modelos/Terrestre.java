@@ -5,7 +5,7 @@ public class Terrestre extends Envio {
     private final double RECARGO_KG_TERRESTRE = 2000;
 
     public Terrestre(String cliente, int codigoDeEnvio, double pesoDelEnvio, double distanciaDelEnvio) {
-        super(cliente, codigoDeEnvio, pesoDelEnvio, distanciaDelEnvio);
+        super(cliente, codigoDeEnvio, pesoDelEnvio, distanciaDelEnvio, TipoEnvio.TERRESTRE);
     }
 
     @Override

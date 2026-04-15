@@ -163,6 +163,7 @@ public class FrmEnvios extends JFrame {
         try {
             int codigo = Integer.parseInt(txtNumero.getText());
 
+            // Validación de código único
             if (EnviosServicio.existeCodigo(codigo)) {
                 JOptionPane.showMessageDialog(this, 
                     "El código " + codigo + " ya existe. Intente con uno diferente.", 

@@ -5,7 +5,7 @@ public class Aereo extends Envio {
     private final double RECARGO_KG_AEREO = 4000;
 
     public Aereo(String cliente, int codigoDeEnvio, double pesoDelEnvio, double distanciaDelEnvio) {
-        super(cliente, codigoDeEnvio, pesoDelEnvio, distanciaDelEnvio);
+        super(cliente, codigoDeEnvio, pesoDelEnvio, distanciaDelEnvio, TipoEnvio.AEREO);
     }
 
     @Override
